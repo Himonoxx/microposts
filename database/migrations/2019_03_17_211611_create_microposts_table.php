@@ -18,6 +18,8 @@ class CreateMicropostsTable extends Migration
             $table->integer('user_id')->unsignd()->index();
             $table->string('content');
             $table->timestamps();
+            
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
