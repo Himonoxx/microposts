@@ -17,11 +17,6 @@ class MicropostsController extends Controller
                 'user'=>$user,
                 'microposts'=>$microposts,
                 ];
-            
-            $data=[
-                'user'=>$user,
-                'microposts'=>$microposts,
-                ];
         }
         return view('welcome',$data);
     }
